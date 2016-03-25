@@ -4,4 +4,9 @@ h2 {
 
 .results {
   display: none;
+  margin-top: 50px;
+}
+
+#recomendation {
+color: red;
 }
