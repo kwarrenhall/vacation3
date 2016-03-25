@@ -1,0 +1,3950 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+<head>
+
+<title>alignment - How to align content of a div to the bottom with css? - Stack Overflow</title>
+    <link rel="shortcut icon" href="//cdn.sstatic.net/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="//cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com"/>
+    <meta property="og:type" content="website" />    
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded&a" />
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How to align content of a div to the bottom with css?" />
+    <meta name="twitter:description" property="og:description" itemprop="description" content="Say I have the following CSS and HTML code:
+
+
+
+#header {
+  height: 150px;
+}
+&amp;lt;body&amp;gt;
+  &amp;lt;div id=&quot;header&quot;&amp;gt;
+    &amp;lt;h1&amp;gt;Header title&amp;lt;/h1&amp;gt;
+    header content (one or multiple ..." />
+    <meta property="og:url" content="http://stackoverflow.com/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css"/>
+    <link rel="canonical" href="http://stackoverflow.com/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css" />
+
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//cdn.sstatic.net/Js/stub.en.js?v=f3b9391f9ca3"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.sstatic.net/stackoverflow/all.css?v=2a52336e2370">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How to align content of a div to the bottom with css?&#39;" href="/feeds/question/585945">
+            <meta name="twitter:app:country" content="US" />
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:iphone" content="871299723" />
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css" />
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:ipad" content="871299723" />
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css" />
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:585945});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '585945');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1458941544,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":true,"domain":"stacksnippets.net"},"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableSocialMediaInSharePopup":true},"timingsGuid":"3a060967-279c-4dec-bbd3-3d3b8c17bca7","timingsInfo":"l4/obttCD8FRfzGLQXbyp8HcsN9CFmE4op4uLE/OsbopsD7DVXyL1abg19eXjjxq5kh3+vdn+WBWfV7i6hfYFyAkiPhLg/k4DlMZ7xmCtCnNY8jhMUd9dCgLT2r3Birs5rJ0YcqaYQPo5RjiD8iCFSoLHZyHg26Vshumrf5tUzSQ7GiEQ1CF9W02oQjKOF1MTwtds8leHCIeUIGPZJ4ad7aoleO95ALKkwTAhCotV/LsiGkpvaDEZtRvZq04DIxDSm+T8hJP2wYONtv9JzMcfMDMYY2KtvT0nYb6hOsZYrhRb1p+EXNLfobbQZ+o4jdvKSJANFlihwnS2ywaxxN1zg==","user":{"fkey":"86c05badd01a3fc40c46d26828119be0","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"b65a552240e0","js/moderator.en.js":"3cbf6a60f9c7","js/full-anon.en.js":"fb1284c686e5","js/full.en.js":"a3215299fac4","js/wmd.en.js":"a07d24e61f8b","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"52aabd47bbed","js/help.en.js":"54b998574be9","js/tageditor.en.js":"9c6df10dabc4","js/tageditornew.en.js":"d27d32e92799","js/inline-tag-editing.en.js":"de80429b1816","js/revisions.en.js":"db5a160e1690","js/review.en.js":"8fbeb442b78f","js/tagsuggestions.en.js":"bc2c996faeda","js/post-validation.en.js":"bae8647949d4","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"cbab82429e21","js/keyboard-shortcuts.en.js":"14bba3b6363f","js/external-editor.en.js":"cf58cc6630ef","js/external-editor.en.js":"cf58cc6630ef","js/snippet-javascript.en.js":"cc95173ecb5b","js/snippet-javascript-codemirror.en.js":"ffd4803fdc9a"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+</head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+    
+        <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        <iframe id="adzerk-user-match" width="0" height="0" frameborder="0" scrolling="no" onload="window.AUMIframeDone=true"
+                src="https://ssum-sec.casalemedia.com/usermatch?s=183712&amp;cb=https%3A%2F%2Fengine.adzerk.net%2Fudb%2F22%2Fsync%2Fi.gif%3FpartnerId%3D1%26userId%3D"
+                style="display: none;" marginheight="0" marginwidth="0"></iframe>
+
+
+
+
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="//stackoverflow.com">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+                    <a href="http://chat.stackoverflow.com" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+            </div>
+
+
+
+
+    <a href="//stackoverflow.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="1"
+       data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.stackoverflow.com"
+       class="site-link js-gps-track"
+       data-id="552"
+       data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                </li>
+                            <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    <a class="site-link js-gps-track"
+                       href="//careers.stackoverflow.com?utm_source=stackoverflow.com&amp;utm_medium=site-ui&amp;utm_campaign=multicollider"
+                            data-gps-track="site_switcher.click({ item_type:9 })"
+>
+                        <div class="site-icon favicon favicon-careers" title="Stack Overflow Careers"></div>
+                        Stack Overflow Careers
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f585945%2fhow-to-align-content-of-a-div-to-the-bottom-with-css" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:10 })"
+>Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f585945%2fhow-to-align-content-of-a-div-to-the-bottom-with-css" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:11 })"
+>log in</a> to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="//stackexchange.com/sites">more stack exchange communities</a></h3>
+        <a href="http://blog.stackoverflow.com" class="fr">company blog</a>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="//stackexchange.com"
+               class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track"
+               data-gps-track="site_switcher.show"
+               title="A list of all 154 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+    <a href="#"
+       class="topbar-icon icon-inbox yes-hover js-inbox-button"
+       title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#"
+       class="topbar-icon icon-achievements yes-hover js-achievements-button "
+       data-unread-class=""
+       title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f585945%2fhow-to-align-content-of-a-div-to-the-bottom-with-css" class="login-link">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f585945%2fhow-to-align-content-of-a-div-to-the-bottom-with-css" class="login-link">log in</a>
+
+                        <a href="/tour">tour</a>
+                            <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="//meta.stackoverflow.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                        About Us
+                        <span class="item-summary">
+                            Learn more about Stack Overflow the company
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://business.stackoverflow.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                        Business
+                        <span class="item-summary">
+                            Learn more about hiring developers or posting ads with us
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                            <li><a id="nav-jobs" href="/jobs">Jobs</a></li>
+                        <li><a id="nav-tags" href="/tags">Tags</a></li>
+                        <li><a id="nav-users" href="/users">Users</a></li>
+                        <li><a id="nav-badges" href="/help/badges">Badges</a></li>
+                                            </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope itemtype="http://schema.org/Question">
+    <link itemprop="image" href="//cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+<div id="herobox">
+    <div id="hero-content">
+            <div id="close"><a title="click to minimize">_</a></div>
+        <div id="blurb">
+            Stack Overflow is a community of 4.7 million programmers, just like you, helping each other.
+            <br/>
+                <br/>Join them; it only takes a minute:<br/>
+            <br/>
+            <a href="/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f585945%2fhow-to-align-content-of-a-div-to-the-bottom-with-css" id="tell-me-more" class="button">Sign up</a>
+        </div>
+        <div id="desc">
+            <b>Join the Stack Overflow community to:</b>
+            <ol id="hiw">
+                <li id="q">Ask programming questions
+                </li>
+                <li id="an">Answer and help your peers
+                </li>
+                <li id="b">Get recognized for your expertise
+                </li>
+            </ol>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <script>
+        StackExchange.ready(function () {
+
+            var location = 0;
+            if ($("body").hasClass("questions-page")) {
+                location = 1;;
+            } else if ($("body").hasClass("question-page")) {
+                location = 1;;
+            } else if ($("body").hasClass("faq-page")) {
+                location = 5;;
+            } else if ($("body").hasClass("home-page")) {
+                location = 3;;
+            }
+
+            $('#tell-me-more').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+                });
+            });
+            $('#herobox #close').click(function () {
+                StackExchange.using("gps", function () {
+                    StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+                });
+                $.cookie("hero", "mini", { path: "/", expires: 365 });
+                $.ajax({
+                    url: "/hero-mini",
+                    success: function (data) {
+                        $("#herobox").fadeOut("fast", function () {
+                            $("#herobox").replaceWith(data);
+                            $("#herobox-mini").fadeIn("fast");
+                        });
+                    }
+                });
+                return false;
+            });
+        });
+
+    </script>
+</div>
+			<div id="question-header">
+                <h1 itemprop="name"><a href="/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css" class="question-hyperlink">How to align content of a div to the bottom with css?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="585945"  id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk86551316",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk86551316">
+            </div>    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="585945">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">628</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+        <div class="favoritecount"><b>125</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>Say I have the following CSS and HTML code:</p>
+
+<p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-css lang-css prettyprint-override"><code>#header {
+  height: 150px;
+}</code></pre>
+<pre class="snippet-code-html lang-html prettyprint-override"><code>&lt;body&gt;
+  &lt;div id="header"&gt;
+    &lt;h1&gt;Header title&lt;/h1&gt;
+    header content (one or multiple lines)
+  &lt;/div&gt;
+  &lt;div id="content"&gt;
+    bla bla bla
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+</div>
+</div>
+</p>
+
+<p>The header section is of fixed height but the header content may change.
+I would like to content of the header to be vertically aligned to the bottom of the header section, so the last line of text "sticks" to the bottom of the header section.</p>
+
+<p>So if there is only one line of text it would be like:</p>
+
+<pre><code>-----------------------------
+| Header title
+|
+|
+|
+| header content (resulting in one line)
+-----------------------------
+
+bla bla bla
+</code></pre>
+
+<p>And if there were three lines:</p>
+
+<pre><code>-----------------------------
+| Header title
+|
+| header content (which is so
+| much stuff that it perfectly
+| spans over three lines)
+-----------------------------
+
+bla bla bla
+</code></pre>
+
+<p>How can this be done in CSS?</p>
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/css" class="post-tag" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="/questions/tagged/alignment" class="post-tag" title="show questions tagged &#39;alignment&#39;" rel="tag">alignment</a> <a href="/questions/tagged/vertical-alignment" class="post-tag" title="show questions tagged &#39;vertical-alignment&#39;" rel="tag">vertical-alignment</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/585945" title="short permalink to this question" class="short-link" id="link-post-585945">share</a><span class="lsep">|</span><a href="/posts/585945/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/585945/revisions" title="show all edits to this post">edited <span title="2015-07-15 15:08:41Z" class="relativetime">Jul 15 '15 at 15:08</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2065702/zach-saucier"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/DPtCd.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2065702/zach-saucier">Zach Saucier</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 13287" dir="ltr">13.3k</span><span title="6 gold badges"><span class="badge1"></span><span class="badgecount">6</span></span><span title="28 silver badges"><span class="badge2"></span><span class="badgecount">28</span></span><span title="57 bronze badges"><span class="badge3"></span><span class="badgecount">57</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2009-02-25 13:15:09Z" class="relativetime">Feb 25 '09 at 13:15</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/3241/kristof"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/d813e1a6fa1430f89c6508ab51743854?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/3241/kristof">kristof</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 25287" dir="ltr">25.3k</span><span title="18 gold badges"><span class="badge1"></span><span class="badgecount">18</span></span><span title="68 silver badges"><span class="badge2"></span><span class="badgecount">68</span></span><span title="98 bronze badges"><span class="badge3"></span><span class="badgecount">98</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-585945" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-585945" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>        </table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								16 Answers
+                                <span style="display:none;" itemprop="answerCount">16</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a class="youarehere" href="/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active">
+            active</a>
+        <a href="/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest">
+            oldest</a>
+        <a href="/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="585965"></a>
+<div id="answer-585965" class="answer accepted-answer" data-answerid="585965"  itemscope itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="585965">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">782</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Relative+absolute positioning is your best bet:</p>
+
+<p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-css lang-css prettyprint-override"><code>  #header {
+    position: relative;
+    min-height: 150px;
+  }
+  #header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }</code></pre>
+<pre class="snippet-code-html lang-html prettyprint-override"><code>&lt;div id="header"&gt;
+  &lt;h1&gt;Title&lt;/h1&gt;
+  &lt;div id="header-content"&gt;Some content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</p>
+
+<p>But you may run into issues with that.  When I tried it I had problems with dropdown menus appearing below the content.  It's just not pretty.</p>
+
+<p>Honestly, for vertical centering issues and, well, any vertical alignment issues with the items aren't fixed height, it's easier just to use tables.</p>
+
+<p>Example: <a href="http://stackoverflow.com/questions/522928/can-you-do-this-html-layout-without-using-tables">Can you do this HTML layout without using tables?</a></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/585965" title="short permalink to this answer" class="short-link" id="link-post-585965">share</a><span class="lsep">|</span><a href="/posts/585965/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/585965/revisions" title="show all edits to this post">edited <span title="2015-03-31 19:18:48Z" class="relativetime">Mar 31 '15 at 19:18</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/3207406/oliverpool"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/3870ef2ee8e67369b0ece69ce315b187?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/3207406/oliverpool">oliverpool</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,134</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="16 bronze badges"><span class="badge3"></span><span class="badgecount">16</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-02-25 13:20:01Z" class="relativetime">Feb 25 '09 at 13:20</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/18393/cletus"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/2f364c2e36b52bc80296cbf23da8b231?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/18393/cletus">cletus</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 377631" dir="ltr">378k</span><span title="110 gold badges"><span class="badge1"></span><span class="badgecount">110</span></span><span title="740 silver badges"><span class="badge2"></span><span class="badgecount">740</span></span><span title="850 bronze badges"><span class="badge3"></span><span class="badgecount">850</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-585965" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="4"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-397822" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I actually found that solution before asking here, but somehow forgot to add the position: relative; to the header div and the content kept landing at the bottom of the page. Thanks</span>
+                    &ndash;&nbsp;<a href="/users/3241/kristof"
+                       title="25287 reputation"
+                       class="comment-user owner">kristof</a>
+                <span class="comment-date" dir="ltr"><span title="2009-02-25 13:49:04Z" class="relativetime-clean">Feb 25 '09 at 13:49</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-15447049" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">10</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You can manage your dropdown position with the z-index property to bring it to front. Remember that the z-index property works with elements positioned relatively or absolutely. Also, is not correct semantically speaking to use a table to achieve layout results.</span>
+                    &ndash;&nbsp;<a href="/users/425741/alejandro-iglesias"
+                       title="9956 reputation"
+                       class="comment-user">Alejandro Iglesias</a>
+                <span class="comment-date" dir="ltr"><span title="2012-07-25 19:16:46Z" class="relativetime-clean">Jul 25 '12 at 19:16</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-32833076" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">In the case of text content as described in the original problem, #header-content should really be a <code>p</code> element, or at the very least a <code>span</code></span>
+                    &ndash;&nbsp;<a href="/users/2145980/josh-burgess"
+                       title="6510 reputation"
+                       class="comment-user">Josh Burgess</a>
+                <span class="comment-date" dir="ltr"><span title="2014-02-11 21:18:30Z" class="relativetime-clean">Feb 11 '14 at 21:18</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-37015878" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">if <code>#header</code> has a fixed height, here is a quick hack: <code>#header-content { position: relative; bottom: -4px; }</code> (change the -4px to whatever value works for you), this is kinda dirty but has the advantage of letting <code>#header</code> keep its positioning (ie. static) if required. Otherwise, go for @Cletus solution.</span>
+                    &ndash;&nbsp;<a href="/users/759452/adrien-be"
+                       title="5346 reputation"
+                       class="comment-user">Adrien Be</a>
+                <span class="comment-date" dir="ltr"><span title="2014-06-03 12:49:41Z" class="relativetime-clean">Jun 3 '14 at 12:49</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-41854097" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This doesn&#39;t allow the content to scroll if the content is shorter than container.</span>
+                    &ndash;&nbsp;<a href="/users/235633/bafromca"
+                       title="1058 reputation"
+                       class="comment-user">bafromca</a>
+                <span class="comment-date" dir="ltr"><span title="2014-10-29 02:29:08Z" class="relativetime-clean">Oct 29 '14 at 2:29</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-585965" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>4</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk370522936",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk370522936">
+            </div>
+  
+<a name="35561987"></a>
+<div id="answer-35561987" class="answer" data-answerid="35561987"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="35561987">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Seems to be working:</p>
+
+<p>HTML:
+    I'm at the bottom</p>
+
+<p>css:</p>
+
+<pre><code>h1.alignBtm {
+  line-height: 3em;
+}
+h1.alignBtm span {
+  line-height: 1.2em;
+  vertical-align: bottom;
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/35561987" title="short permalink to this answer" class="short-link" id="link-post-35561987">share</a><span class="lsep">|</span><a href="/posts/35561987/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2016-02-22 19:17:50Z" class="relativetime">Feb 22 at 19:17</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/5359651/user5359651"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/612b6c7572e60ed946f584776f9fd67f?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/5359651/user5359651">user5359651</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">11</span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-35561987" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-35561987" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="24830432"></a>
+<div id="answer-24830432" class="answer" data-answerid="24830432"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="24830432">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">36</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>After struggling with this same issue for some time, I finally figured out a solution that meets all of my requirements:</p>
+
+<ul>
+<li>Does not require that I know the container's height.</li>
+<li>Unlike relative+absolute solutions, the content doesn't float in its own layer (i.e., it embeds normally in the container div).</li>
+<li>Works across browsers (IE8+).</li>
+<li>Simple to implement.</li>
+</ul>
+
+<p>The solution just takes one <code>&lt;div&gt;</code>, which I call the "aligner":</p>
+
+<p><b>CSS</b></p>
+
+<pre><code>.bottom_aligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
+}
+</code></pre>
+
+<p><b>html</b></p>
+
+<pre><code>&lt;div class=bottom_aligner&gt;&lt;/div&gt;
+... Your content here ...
+</code></pre>
+
+<p>This trick works by creating a tall, skinny div, which pushes the text baseline to the bottom of the container.</p>
+
+<p>Here is a complete example that achieves what the OP was asking for.  I've made the "bottom_aligner" thick and red for demonstration purposes only.</p>
+
+<p>CSS:</p>
+
+<pre><code>.outer-container {
+  border: 2px solid black;
+  height: 175px;
+  width: 300px;
+}
+
+.top-section {
+  background: lightgreen;
+  height: 50%;
+}
+
+.bottom-section {
+  background: lightblue;
+  height: 50%;
+  margin: 8px;
+}
+
+.bottom-aligner {
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+  width: 3px;
+  background: red;
+}
+
+.bottom-content {
+  display: inline-block;
+}
+
+.top-content {
+  padding: 8px;
+}
+</code></pre>
+
+<p>HTML:</p>
+
+<pre><code>&lt;body&gt;
+  &lt;div class=outer-container&gt;
+    &lt;div class=top-section&gt;
+      This text
+      &lt;br&gt; is on top.
+    &lt;/div&gt;
+    &lt;div class=bottom-section&gt;
+      &lt;div class=bottom-aligner&gt;&lt;/div&gt;
+      &lt;div class=bottom-content&gt;
+        I like it here
+        &lt;br&gt; at the bottom.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/8Eks6.jpg" alt="Align bottom content"></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/24830432" title="short permalink to this answer" class="short-link" id="link-post-24830432">share</a><span class="lsep">|</span><a href="/posts/24830432/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/24830432/revisions" title="show all edits to this post">edited <span title="2016-02-09 10:55:24Z" class="relativetime">Feb 9 at 10:55</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4377017/igor-ivancha"><div class="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-QUYAVWJQopU/AAAAAAAAAAI/AAAAAAAAAAA/5Xpy51rKuFM/photo.jpg?sz=32" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4377017/igor-ivancha">Igor Ivancha</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,670</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-07-18 17:11:31Z" class="relativetime">Jul 18 '14 at 17:11</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2565950/greg-prisament"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/d20cffd68d5bfcf858134ddd6fa503f1?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2565950/greg-prisament">Greg Prisament</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,180</span><span title="7 silver badges"><span class="badge2"></span><span class="badgecount">7</span></span><span title="14 bronze badges"><span class="badge3"></span><span class="badgecount">14</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-24830432" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-48640665" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Almost perfect :) but it doesn&#39;t allow automatic line breaks.</span>
+                    &ndash;&nbsp;<a href="/users/1781670/gaston-sanchez"
+                       title="619 reputation"
+                       class="comment-user">Gaston Sanchez</a>
+                <span class="comment-date" dir="ltr"><span title="2015-05-16 00:23:43Z" class="relativetime-clean">May 16 '15 at 0:23</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-48867754" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Nice code, I&#39;ve made a JSFiddle with it: <a href="http://jsfiddle.net/b48xs5r2/" rel="nofollow">jsfiddle.net/b48xs5r2</a></span>
+                    &ndash;&nbsp;<a href="/users/3359418/reecube"
+                       title="1309 reputation"
+                       class="comment-user">ReeCube</a>
+                <span class="comment-date" dir="ltr"><span title="2015-05-22 06:17:12Z" class="relativetime-clean">May 22 '15 at 6:17</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-50009490" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Doesn&#39;t work if outer-container can scroll (overflow-y: auto). :(</span>
+                    &ndash;&nbsp;<a href="/users/890624/ecraig12345"
+                       title="107 reputation"
+                       class="comment-user">ecraig12345</a>
+                <span class="comment-date" dir="ltr"><span title="2015-06-22 21:08:55Z" class="relativetime-clean">Jun 22 '15 at 21:08</span></span>
+                    <span class="edited-yes" title="this comment was edited 3 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-50523766" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I guess that <i>marin:8px</i> should be <i>margin:8px</i></span>
+                    &ndash;&nbsp;<a href="/users/38108/graham-perrin"
+                       title="380 reputation"
+                       class="comment-user">Graham Perrin</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-07 09:10:56Z" class="relativetime-clean">Jul 7 '15 at 9:10</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-24830432" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="788612"></a>
+<div id="answer-788612" class="answer" data-answerid="788612"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="788612">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">65</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I use these properties and it works!</p>
+
+<pre><code>#header {
+  display: table-cell;
+  vertical-align: bottom;
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/788612" title="short permalink to this answer" class="short-link" id="link-post-788612">share</a><span class="lsep">|</span><a href="/posts/788612/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/788612/revisions" title="show all edits to this post">edited <span title="2016-02-09 10:32:52Z" class="relativetime">Feb 9 at 10:32</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4377017/igor-ivancha"><div class="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-QUYAVWJQopU/AAAAAAAAAAI/AAAAAAAAAAA/5Xpy51rKuFM/photo.jpg?sz=32" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4377017/igor-ivancha">Igor Ivancha</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,670</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2009-04-25 09:43:38Z" class="relativetime">Apr 25 '09 at 9:43</span>
+    </div>
+    <div class="user-gravatar32">
+        <span class="anonymous-gravatar"></span>
+    </div>
+    <div class="user-details">
+        Tam Mai
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-788612" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="3"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-14220466" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="supernova">38</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Isn&#39;t supported in IE8 and earlier.  It IS supported in IE9.</span>
+                    &ndash;&nbsp;<a href="/users/870729/cale-b"
+                       title="10468 reputation"
+                       class="comment-user">cale_b</a>
+                <span class="comment-date" dir="ltr"><span title="2012-06-05 22:47:55Z" class="relativetime-clean">Jun 5 '12 at 22:47</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-16874020" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">16</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Doesn&#39;t look to work in Chrome :/</span>
+                    &ndash;&nbsp;<a href="/users/316700/fguillen"
+                       title="15638 reputation"
+                       class="comment-user">fguillen</a>
+                <span class="comment-date" dir="ltr"><span title="2012-09-21 14:46:33Z" class="relativetime-clean">Sep 21 '12 at 14:46</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-21319126" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">19</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@cale_b According to <a href="http://caniuse.com/#search=table-cell" rel="nofollow">caniuse.com</a> it <i>DOES</i> work in IE8.</span>
+                    &ndash;&nbsp;<a href="/users/363701/zach-lysobey"
+                       title="5000 reputation"
+                       class="comment-user">Zach Lysobey</a>
+                <span class="comment-date" dir="ltr"><span title="2013-02-28 19:08:21Z" class="relativetime-clean">Feb 28 '13 at 19:08</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-30916757" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@ZachL Happenstance - I&#39;m supporting a legacy app in IE8 for a corporate client and this <i>does in fact</i> work.</span>
+                    &ndash;&nbsp;<a href="/users/183624/mr-javascript"
+                       title="3964 reputation"
+                       class="comment-user">Mr. JavaScript</a>
+                <span class="comment-date" dir="ltr"><span title="2013-12-18 07:12:13Z" class="relativetime-clean">Dec 18 '13 at 7:12</span></span>
+                    <span class="edited-yes" title="this comment was edited 2 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-30916821" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@fguillen: tested in Chrome (v31) just now as well.  Works there, too.</span>
+                    &ndash;&nbsp;<a href="/users/183624/mr-javascript"
+                       title="3964 reputation"
+                       class="comment-user">Mr. JavaScript</a>
+                <span class="comment-date" dir="ltr"><span title="2013-12-18 07:14:19Z" class="relativetime-clean">Dec 18 '13 at 7:14</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-788612" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>3</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="21915794"></a>
+<div id="answer-21915794" class="answer" data-answerid="21915794"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="21915794">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If you have multiple, dynamic height items, use the CSS display values of table and table-cell:</p>
+
+<p><strong>HTML</strong></p>
+
+<pre><code>&lt;html&gt;
+&lt;body&gt;
+
+  &lt;div class="valign bottom"&gt;
+    &lt;div&gt;
+
+      &lt;div&gt;my bottom aligned div 1&lt;/div&gt;
+      &lt;div&gt;my bottom aligned div 2&lt;/div&gt;
+      &lt;div&gt;my bottom aligned div 3&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><strong>CSS</strong></p>
+
+<pre><code>html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.valign {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.valign &gt; div {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+}
+.valign.bottom &gt; div {
+  vertical-align: bottom;
+}
+</code></pre>
+
+<p>I've created a JSBin demo here: <a href="http://jsbin.com/INOnAkuF/2/edit" rel="nofollow">http://jsbin.com/INOnAkuF/2/edit</a></p>
+
+<p>The demo also has an example how to vertically center align using the same technique.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/21915794" title="short permalink to this answer" class="short-link" id="link-post-21915794">share</a><span class="lsep">|</span><a href="/posts/21915794/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/21915794/revisions" title="show all edits to this post">edited <span title="2016-02-09 10:32:06Z" class="relativetime">Feb 9 at 10:32</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4377017/igor-ivancha"><div class="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-QUYAVWJQopU/AAAAAAAAAAI/AAAAAAAAAAA/5Xpy51rKuFM/photo.jpg?sz=32" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4377017/igor-ivancha">Igor Ivancha</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,670</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-02-20 17:55:09Z" class="relativetime">Feb 20 '14 at 17:55</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/251461/romiem"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/LhgKh.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/251461/romiem">romiem</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,288</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="14 silver badges"><span class="badge2"></span><span class="badgecount">14</span></span><span title="25 bronze badges"><span class="badge3"></span><span class="badgecount">25</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-21915794" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-21915794" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="585963"></a>
+<div id="answer-585963" class="answer" data-answerid="585963"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="585963">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">108</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Use CSS positioning.</p>
+
+<pre class="lang-css prettyprint-override"><code>/* creates a new stacking context on the header */
+#header {
+  position: relative;
+}
+
+/* positions header-content at the bottom of header's context */
+#header-content {
+  position: absolute;
+  bottom: 0;
+}
+</code></pre>
+
+<p>As <a href="http://stackoverflow.com/questions/585945/how-to-align-content-of-a-div-to-the-bottom-with-css/585965#585965">cletus</a> noted, you need identify the header-content to make this work.</p>
+
+<pre class="lang-html prettyprint-override"><code>&lt;span id="header-content"&gt;some header content&lt;/span&gt; 
+
+&lt;div style="height:100%; position:relative;"&gt;                                              
+    &lt;div style="height:10%; position:absolute; bottom:0px;"&gt;bottom&lt;/div&gt;
+&lt;/div&gt; 
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/585963" title="short permalink to this answer" class="short-link" id="link-post-585963">share</a><span class="lsep">|</span><a href="/posts/585963/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/585963/revisions" title="show all edits to this post">edited <span title="2016-02-09 10:29:57Z" class="relativetime">Feb 9 at 10:29</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4377017/igor-ivancha"><div class="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-QUYAVWJQopU/AAAAAAAAAAI/AAAAAAAAAAA/5Xpy51rKuFM/photo.jpg?sz=32" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4377017/igor-ivancha">Igor Ivancha</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,670</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2009-02-25 13:18:51Z" class="relativetime">Feb 25 '09 at 13:18</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/437/patrick-mcelhaney"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/bd6f67362bcdd7790623d740169d9e67?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/437/patrick-mcelhaney">Patrick McElhaney</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 27464" dir="ltr">27.5k</span><span title="25 gold badges"><span class="badge1"></span><span class="badgecount">25</span></span><span title="96 silver badges"><span class="badge2"></span><span class="badgecount">96</span></span><span title="129 bronze badges"><span class="badge3"></span><span class="badgecount">129</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-585963" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-397812" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">+1. Thanks for the answer, I accepted the one by cletus as it pointed me into the right drection first</span>
+                    &ndash;&nbsp;<a href="/users/3241/kristof"
+                       title="25287 reputation"
+                       class="comment-user owner">kristof</a>
+                <span class="comment-date" dir="ltr"><span title="2009-02-25 13:45:37Z" class="relativetime-clean">Feb 25 '09 at 13:45</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-29424220" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">fyi ... this caused my header-content to collapse its width, so I had to add a <code>width = &#39;100%&#39;</code> on the header-content</span>
+                    &ndash;&nbsp;<a href="/users/689152/dsdsdsdsd"
+                       title="759 reputation"
+                       class="comment-user">dsdsdsdsd</a>
+                <span class="comment-date" dir="ltr"><span title="2013-11-05 16:28:32Z" class="relativetime-clean">Nov 5 '13 at 16:28</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-35539977" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@dsdsdsdsd You could also fix that by adding display:block to #header-content.</span>
+                    &ndash;&nbsp;<a href="/users/437/patrick-mcelhaney"
+                       title="27464 reputation"
+                       class="comment-user">Patrick McElhaney</a>
+                <span class="comment-date" dir="ltr"><span title="2014-04-22 20:37:10Z" class="relativetime-clean">Apr 22 '14 at 20:37</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-585963" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="19375617"></a>
+<div id="answer-19375617" class="answer" data-answerid="19375617"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="19375617">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>The site I just did for a client requested that the footer text was a high box, with the text at the bottom I achieved this with simple padding, should work for all browsers.</p>
+
+<pre><code>&lt;div id="footer"&gt;
+  some text here
+&lt;/div&gt;
+</code></pre>
+
+
+
+<pre><code>#footer {
+  padding: 0 30px;
+  padding-top: 60px;
+  padding-bottom: 8px;
+}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/19375617" title="short permalink to this answer" class="short-link" id="link-post-19375617">share</a><span class="lsep">|</span><a href="/posts/19375617/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/19375617/revisions" title="show all edits to this post">edited <span title="2016-02-09 10:29:03Z" class="relativetime">Feb 9 at 10:29</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4377017/igor-ivancha"><div class="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-QUYAVWJQopU/AAAAAAAAAAI/AAAAAAAAAAA/5Xpy51rKuFM/photo.jpg?sz=32" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4377017/igor-ivancha">Igor Ivancha</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,670</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-10-15 07:35:23Z" class="relativetime">Oct 15 '13 at 7:35</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2881581/nicki-l-hansen"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/b51b5704d6359bb77ccb1018bf52094e?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2881581/nicki-l-hansen">Nicki L. Hansen</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">11</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-19375617" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-28713506" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Your first declaration <code>padding: 0 30px</code> is a bit redundant, you may as well have put <code>padding: 30px</code> then the other 2 declarations.</span>
+                    &ndash;&nbsp;<a href="/users/484367/andrew"
+                       title="1448 reputation"
+                       class="comment-user">Andrew</a>
+                <span class="comment-date" dir="ltr"><span title="2013-10-15 07:57:23Z" class="relativetime-clean">Oct 15 '13 at 7:57</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-28713797" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Absolutely true, however I&#39;m following the practices of my workplace.</span>
+                    &ndash;&nbsp;<a href="/users/2881581/nicki-l-hansen"
+                       title="11 reputation"
+                       class="comment-user">Nicki L. Hansen</a>
+                <span class="comment-date" dir="ltr"><span title="2013-10-15 08:07:57Z" class="relativetime-clean">Oct 15 '13 at 8:07</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-30933908" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">5</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Really?, that seems like plain <i>bad</i> practice. Just use the shorthand, or be explicit everywhere. <code>padding: 60px 30px 8px;</code>, <code>padding: 60px 30px 8px 30px;</code>, four explicit <code>padding-</code> rules, or even @TheWaxMann&#39;s suggestion are all superior - and I&#39;m willing and able to argue that one ;-)</span>
+                    &ndash;&nbsp;<a href="/users/363701/zach-lysobey"
+                       title="5000 reputation"
+                       class="comment-user">Zach Lysobey</a>
+                <span class="comment-date" dir="ltr"><span title="2013-12-18 15:10:15Z" class="relativetime-clean">Dec 18 '13 at 15:10</span></span>
+                    <span class="edited-yes" title="this comment was edited 3 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-19375617" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="13712937"></a>
+<div id="answer-13712937" class="answer" data-answerid="13712937"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="13712937">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">19</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Inline or inline-block elements can be aligned to the bottom of block level elements if the line-height of the parent/block element is greater than that of the inline element.*</p>
+
+<p>markup:</p>
+
+<pre class="lang-html prettyprint-override"><code>&lt;h1 class="alignBtm"&gt;&lt;span&gt;I'm at the bottom&lt;/span&gt;&lt;/h1&gt;
+</code></pre>
+
+<p>css:</p>
+
+<pre class="lang-css prettyprint-override"><code>h1.alignBtm {
+  line-height: 3em;
+}
+h1.alignBtm span {
+  line-height: 1.2em;
+  vertical-align: bottom;
+}
+</code></pre>
+
+<p>*make sure you're in standards mode</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/13712937" title="short permalink to this answer" class="short-link" id="link-post-13712937">share</a><span class="lsep">|</span><a href="/posts/13712937/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/13712937/revisions" title="show all edits to this post">edited <span title="2016-02-09 10:24:03Z" class="relativetime">Feb 9 at 10:24</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4377017/igor-ivancha"><div class="gravatar-wrapper-32"><img src="https://lh3.googleusercontent.com/-QUYAVWJQopU/AAAAAAAAAAI/AAAAAAAAAAA/5Xpy51rKuFM/photo.jpg?sz=32" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4377017/igor-ivancha">Igor Ivancha</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,670</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-12-04 22:16:43Z" class="relativetime">Dec 4 '12 at 22:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1026591/dougwig"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/7e0c369731b68944eaa881a0c6157edd?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1026591/dougwig">dougwig</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">294</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-13712937" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-24878101" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">+1, just had to say thanks. That bit about the line-height of the parent having to be greater than that of the child saved me so much frustration today.</span>
+                    &ndash;&nbsp;<a href="/users/931860/dominic-p"
+                       title="740 reputation"
+                       class="comment-user">Dominic P</a>
+                <span class="comment-date" dir="ltr"><span title="2013-06-18 22:54:13Z" class="relativetime-clean">Jun 18 '13 at 22:54</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-47263806" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Nice solution! Least hacky and very concise (IMO).</span>
+                    &ndash;&nbsp;<a href="/users/357012/philt"
+                       title="1337 reputation"
+                       class="comment-user">PhilT</a>
+                <span class="comment-date" dir="ltr"><span title="2015-04-10 08:27:09Z" class="relativetime-clean">Apr 10 '15 at 8:27</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-48640840" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Thank you! this helped me a lot.</span>
+                    &ndash;&nbsp;<a href="/users/1781670/gaston-sanchez"
+                       title="619 reputation"
+                       class="comment-user">Gaston Sanchez</a>
+                <span class="comment-date" dir="ltr"><span title="2015-05-16 00:40:18Z" class="relativetime-clean">May 16 '15 at 0:40</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-13712937" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="28366192"></a>
+<div id="answer-28366192" class="answer" data-answerid="28366192"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="28366192">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You don't need absolute+relative for this. It is very much possible using relative position for both container and data. This is how you do it.</p>
+
+<p>Assume height of your data is going to be <code>x</code>. Your container is relative and footer is also relative. All you have to do is add to your data</p>
+
+<pre><code>bottom: -webkit-calc(-100% + x);
+</code></pre>
+
+<p>Your data will always be at the bottom of your container. Works even if you have container with dynamic height.</p>
+
+<p><strong>HTML will be like this</strong></p>
+
+<pre><code>&lt;div class="container"&gt;
+  &lt;div class="data"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><strong>CSS will be like this</strong></p>
+
+<pre><code>.container{
+  height:400px;
+  width:600px;
+  border:1px solid red;
+  margin-top:50px;
+  margin-left:50px;
+  display:block;
+}
+.data{
+  width:100%;
+  height:40px;
+  position:relative;
+   float:left;
+  border:1px solid blue;
+  bottom: -webkit-calc(-100% + 40px);
+   bottom:calc(-100% + 40px);
+}
+</code></pre>
+
+<p><a href="http://cssdeck.com/labs/i6jrmpv2" rel="nofollow">Live example here</a></p>
+
+<p>Hope this helps. </p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/28366192" title="short permalink to this answer" class="short-link" id="link-post-28366192">share</a><span class="lsep">|</span><a href="/posts/28366192/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-02-06 12:49:56Z" class="relativetime">Feb 6 '15 at 12:49</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2003602/aditya-ponkshe"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/0XbaA.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2003602/aditya-ponkshe">Aditya Ponkshe</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,449</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="36 bronze badges"><span class="badge3"></span><span class="badgecount">36</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-28366192" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-50838494" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You should mention the <a href="http://caniuse.com/#feat=calc" rel="nofollow">browser support</a></span>
+                    &ndash;&nbsp;<a href="/users/2065702/zach-saucier"
+                       title="13287 reputation"
+                       class="comment-user">Zach Saucier</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-15 15:06:47Z" class="relativetime-clean">Jul 15 '15 at 15:06</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-28366192" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="25494116"></a>
+<div id="answer-25494116" class="answer" data-answerid="25494116"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="25494116">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">27</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>If you're not worried about legacy browsers use a flexbox.</p>
+
+<p>The parent element needs its display type set to flex</p>
+
+<pre><code>div.parent {
+  display: flex;
+  height: 100%;
+}
+</code></pre>
+
+<p>Then you set the child element's align-self to flex-end.</p>
+
+<pre><code>span.child {
+  display: inline-block;
+  align-self: flex-end;
+}
+</code></pre>
+
+<p>Here's the resource I used to learn:
+<a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">http://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/25494116" title="short permalink to this answer" class="short-link" id="link-post-25494116">share</a><span class="lsep">|</span><a href="/posts/25494116/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/25494116/revisions" title="show all edits to this post">edited <span title="2015-01-22 18:34:44Z" class="relativetime">Jan 22 '15 at 18:34</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-08-25 20:46:03Z" class="relativetime">Aug 25 '14 at 20:46</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2029822/lee-irvine"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/4e76ae4b275237b87750a155eb2d50b6?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2029822/lee-irvine">Lee Irvine</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">530</span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="7 bronze badges"><span class="badge3"></span><span class="badgecount">7</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-25494116" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-41538080" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Much nicer than all these IE hacks :)</span>
+                    &ndash;&nbsp;<a href="/users/977939/jpillora"
+                       title="2739 reputation"
+                       class="comment-user">jpillora</a>
+                <span class="comment-date" dir="ltr"><span title="2014-10-19 06:44:40Z" class="relativetime-clean">Oct 19 '14 at 6:44</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-41854076" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I can&#39;t get it to work... <a href="http://codepen.io/anon/pen/rgldC?editors=110" rel="nofollow">codepen.io/anon/pen/rgldC?editors=110</a></span>
+                    &ndash;&nbsp;<a href="/users/235633/bafromca"
+                       title="1058 reputation"
+                       class="comment-user">bafromca</a>
+                <span class="comment-date" dir="ltr"><span title="2014-10-29 02:27:13Z" class="relativetime-clean">Oct 29 '14 at 2:27</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-44567855" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@bafromca, two reasons that doesn&#39;t work. 1: Use &#39;align-self&#39; instead of align-items (my fault, I&#39;ve edited my original post). 2: 100% height won&#39;t work unless the parent has height.</span>
+                    &ndash;&nbsp;<a href="/users/2029822/lee-irvine"
+                       title="530 reputation"
+                       class="comment-user">Lee Irvine</a>
+                <span class="comment-date" dir="ltr"><span title="2015-01-22 18:25:29Z" class="relativetime-clean">Jan 22 '15 at 18:25</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-25494116" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="27882048"></a>
+<div id="answer-27882048" class="answer downvoted-answer" data-answerid="27882048"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="27882048">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">-6</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>2015 solution</p>
+
+<pre><code>&lt;div style='width:200px; height:60px; border:1px solid red;'&gt;
+
+    &lt;table width=100% height=100% cellspacing=0 cellpadding=0 border=0&gt;
+        &lt;tr&gt;&lt;td valign=bottom&gt;{$This_text_at_bottom}&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+
+&lt;/div&gt;
+</code></pre>
+
+<p><a href="http://codepen.io/anon/pen/qERMdx" rel="nofollow">http://codepen.io/anon/pen/qERMdx</a></p>
+
+<p>your welcome</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/27882048" title="short permalink to this answer" class="short-link" id="link-post-27882048">share</a><span class="lsep">|</span><a href="/posts/27882048/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-01-10 22:56:34Z" class="relativetime">Jan 10 '15 at 22:56</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1084501/waza123"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/FlMDA.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1084501/waza123">waza123</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">637</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="30 bronze badges"><span class="badge3"></span><span class="badgecount">30</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-27882048" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-55383369" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Table layout for this can be problematic; CSS is recommended instead.  The valign property is also not supported in HTML5. (see <a href="http://www.w3schools.com/tags/att_td_valign.asp" rel="nofollow">w3schools.com/tags/att_td_valign.asp</a>)</span>
+                    &ndash;&nbsp;<a href="/users/943002/coderob"
+                       title="591 reputation"
+                       class="comment-user">coderob</a>
+                <span class="comment-date" dir="ltr"><span title="2015-11-19 16:16:35Z" class="relativetime-clean">Nov 19 '15 at 16:16</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-27882048" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="24710720"></a>
+<div id="answer-24710720" class="answer" data-answerid="24710720"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="24710720">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>if you could set the height of the wrapping div of the content (#header-content as shown in other's reply), instead of the entire #header, maybe you can also try this approach:</p>
+
+<p><em>HTML</em></p>
+
+<pre><code>&lt;div id="header"&gt;
+    &lt;h1&gt;some title&lt;/h1&gt;
+    &lt;div id="header-content"&gt;
+        &lt;span&gt;
+            first line of header text&lt;br&gt;
+            second line of header text&lt;br&gt;
+            third, last line of header text
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><em>CSS</em></p>
+
+<pre><code>#header-content{
+    height:100px;
+}
+
+#header-content::before{
+  display:inline-block;
+  content:'';
+  height:100%;
+  vertical-align:bottom;
+}
+
+#header-content span{
+    display:inline-block;
+}
+</code></pre>
+
+<p><a href="http://codepen.io/codeboyim/pen/pGxcs" rel="nofollow">show on codepen</a></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/24710720" title="short permalink to this answer" class="short-link" id="link-post-24710720">share</a><span class="lsep">|</span><a href="/posts/24710720/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-07-12 07:28:33Z" class="relativetime">Jul 12 '14 at 7:28</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1351350/codeboy"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/fa80e10344fe66bf3fd8c52703adac32?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1351350/codeboy">codeboy</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">213</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="9 bronze badges"><span class="badge3"></span><span class="badgecount">9</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-24710720" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-24710720" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="7032909"></a>
+<div id="answer-7032909" class="answer" data-answerid="7032909"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="7032909">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>A perfect cross-browser example is probably this one here:</p>
+
+<p><a href="http://www.csszengarden.com/?cssfile=/213/213.css&amp;page=0" rel="nofollow">http://www.csszengarden.com/?cssfile=/213/213.css&amp;page=0</a></p>
+
+<p>The idea is both to display the div at the bottom and also making it stick there. Often the simple approach will make the sticky div scroll up with the main content.</p>
+
+<p>Following is a fully working minimal example. Note that there's no div embedding trickery required. The many BRs are just to force a scrollbar to appear:</p>
+
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #floater {
+            background: yellow;
+            height: 200px;
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            z-index: 5;
+            border-top: 2px solid gold;
+        }
+
+    &lt;/style&gt;
+&lt;/head&gt;
+
+
+&lt;body&gt;
+    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+
+    &lt;div id="floater"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>If you are wondering your code might not be working on IE, remember to add the DOCTYPE tag at the top. It's crucial for this to work on IE. Also, this should be the first tag and nothing should appear above it.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/7032909" title="short permalink to this answer" class="short-link" id="link-post-7032909">share</a><span class="lsep">|</span><a href="/posts/7032909/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/7032909/revisions" title="show all edits to this post">edited <span title="2013-05-30 07:07:47Z" class="relativetime">May 30 '13 at 7:07</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2336796/thomas"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/7bf1c3cc89bd5d8f4710d72c6b8752ad?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2336796/thomas">Thomas</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">21</span><span title="11 bronze badges"><span class="badge3"></span><span class="badgecount">11</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-08-11 21:12:44Z" class="relativetime">Aug 11 '11 at 21:12</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/890747/fakeer"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/273ccccd4233ba91e2eb7bc0696bedf6?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/890747/fakeer">Fakeer</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">33</span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-7032909" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-9957558" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">28</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Since you&#39;re declaring your document as XHTML strict, you should also self-close your <code>&lt;br &#47;&gt;</code> tags...</span>
+                    &ndash;&nbsp;<a href="/users/983430/amos-m-carpenter"
+                       title="2906 reputation"
+                       class="comment-user">Amos M. Carpenter</a>
+                <span class="comment-date" dir="ltr"><span title="2011-11-14 06:17:27Z" class="relativetime-clean">Nov 14 '11 at 6:17</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-19116754" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">7</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@KarlKild&#233;n if you were referring to the comment from aaamos, it most definitely isn&#39;t a silly comment - serving the above document with its <a href="http://www.webstandards.org/learn/articles/askw3c/sep2003/" rel="nofollow">correct <code>content-type</code> header</a> would result in the browser throwing an xml parsing error.</span>
+                    &ndash;&nbsp;<a href="/users/304174/razor"
+                       title="3134 reputation"
+                       class="comment-user">Razor</a>
+                <span class="comment-date" dir="ltr"><span title="2012-12-14 13:16:17Z" class="relativetime-clean">Dec 14 '12 at 13:16</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-28180788" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">6</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is a bad practise! Use CSS instead!</span>
+                    &ndash;&nbsp;<a href="/users/1137334/m93a"
+                       title="1843 reputation"
+                       class="comment-user">m93a</a>
+                <span class="comment-date" dir="ltr"><span title="2013-09-28 11:14:31Z" class="relativetime-clean">Sep 28 '13 at 11:14</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-7032909" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="14432250"></a>
+<div id="answer-14432250" class="answer" data-answerid="14432250"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="14432250">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>try with:</p>
+
+<pre><code>div.myclass { margin-top: 100%; }
+</code></pre>
+
+<p>try changing the % to fix it. Example: 120% or 90% ...etc.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/14432250" title="short permalink to this answer" class="short-link" id="link-post-14432250">share</a><span class="lsep">|</span><a href="/posts/14432250/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/14432250/revisions" title="show all edits to this post">edited <span title="2013-01-21 03:51:55Z" class="relativetime">Jan 21 '13 at 3:51</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-01-21 03:46:31Z" class="relativetime">Jan 21 '13 at 3:46</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1995918/felix"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/8d5dfd4729aa5381b35c66e65c369749?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1995918/felix">felix</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">29</span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-14432250" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-20093434" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I didn&#39;t vote down, but this won&#39;t work, as it&#39;s relevant to the div, not relevant to the text inside the div.</span>
+                    &ndash;&nbsp;<a href="/users/785241/daedalus"
+                       title="6121 reputation"
+                       class="comment-user">Daedalus</a>
+                <span class="comment-date" dir="ltr"><span title="2013-01-21 05:05:45Z" class="relativetime-clean">Jan 21 '13 at 5:05</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-20688274" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Works perfectly fine with 1 set of content, but will need to be adjusted if the content changes. If it&#39;s dynamic content, then dont use this!</span>
+                    &ndash;&nbsp;<a href="/users/1114274/mike-graf"
+                       title="2229 reputation"
+                       class="comment-user">Mike Graf</a>
+                <span class="comment-date" dir="ltr"><span title="2013-02-08 16:42:15Z" class="relativetime-clean">Feb 8 '13 at 16:42</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-14432250" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="14159045"></a>
+<div id="answer-14159045" class="answer" data-answerid="14159045"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="14159045">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">-2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Seems to be working:</p>
+
+<pre><code>#content {
+    /* or just insert a number with "px" if you're fighting CSS without lesscss.org :) */
+    vertical-align: -@header_height + @content_height;
+
+    /* only need it if your content is &lt;div&gt;,
+     * if it is inline (e.g., &lt;a&gt;) will work without it */
+    display: inline-block;
+}
+</code></pre>
+
+<p>Using <a href="http://lesscss.org" rel="nofollow">less</a> makes solving CSS puzzles much more like coding than like... I just love CSS. It's a real pleasure when you can change the whole layout (without breaking it :) just by changing one parameter.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/14159045" title="short permalink to this answer" class="short-link" id="link-post-14159045">share</a><span class="lsep">|</span><a href="/posts/14159045/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/14159045/revisions" title="show all edits to this post">edited <span title="2013-01-04 14:44:31Z" class="relativetime">Jan 4 '13 at 14:44</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2013-01-04 14:31:56Z" class="relativetime">Jan 4 '13 at 14:31</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1816503/esp"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/f0e97301983c1019d98740935009ab6e?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1816503/esp">esp</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,685</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="18 silver badges"><span class="badge2"></span><span class="badgecount">18</span></span><span title="41 bronze badges"><span class="badge3"></span><span class="badgecount">41</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-14159045" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-14159045" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="7028684"></a>
+<div id="answer-7028684" class="answer" data-answerid="7028684"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="7028684">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I know this is over 2 years old, but I have devised a way which is a lot simpler than whats been mentioned.</p>
+
+<p>Set the height of the header div. Then inside that, style your H1 tag as follows:</p>
+
+<pre><code>float: left;
+padding: 90px 10px 11px
+</code></pre>
+
+<p>I'm working on a site for a client, and the design requires the text to be at the bottom of a certain div. I've achieved the result using these two lines and it works fine. Also, if the text does expand, the padding will still remain the same.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/7028684" title="short permalink to this answer" class="short-link" id="link-post-7028684">share</a><span class="lsep">|</span><a href="/posts/7028684/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-08-11 15:33:28Z" class="relativetime">Aug 11 '11 at 15:33</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/395729/mickburkejnr"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/dcffbb37a25ae7944bd146c9663b5f04?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/395729/mickburkejnr">mickburkejnr</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">953</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="39 silver badges"><span class="badge2"></span><span class="badgecount">39</span></span><span title="84 bronze badges"><span class="badge3"></span><span class="badgecount">84</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-7028684" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0"
+                       data-canpost="false"
+                       data-cansee="true"
+                       data-comments-unavailable="false"
+                       data-addlink-disabled="true">
+
+
+
+    <tr id="comment-32242391" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Good answer, but only if you know the height of the header div.</span>
+                    &ndash;&nbsp;<a href="/users/1438561/jayden-lawson"
+                       title="806 reputation"
+                       class="comment-user">Jayden Lawson</a>
+                <span class="comment-date" dir="ltr"><span title="2014-01-27 11:24:30Z" class="relativetime-clean">Jan 27 '14 at 11:24</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-7028684" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="/users/235710/mohammad-adil">Mohammad Adil</a> <span dir="ltr"><span title="2013-12-01 14:20:35Z" class="relativetime">Dec 1 '13 at 14:20</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="/help/whats-reputation">reputation</a> on this site.
+<br /><br />
+Would you like to answer one of these <a href="/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you&#39;re looking for?							Browse other questions tagged <a href="/questions/tagged/css" class="post-tag" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="/questions/tagged/alignment" class="post-tag" title="show questions tagged &#39;alignment&#39;" rel="tag">alignment</a> <a href="/questions/tagged/vertical-alignment" class="post-tag" title="show questions tagged &#39;vertical-alignment&#39;" rel="tag">vertical-alignment</a>  or <a href="/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2009-02-25 13:15:09Z"><b>7 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>964179 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2016-02-22 19:17:50Z">1 month ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk872960675",[5,17,2221]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk872960675">
+            </div>
+        <div id="hireme">
+            <script>
+;"use strict";(function(n){function tt(n,i,r){var u=t.createElement("script"),e="onreadystatechange",o="onload",f="readyState",s=!1;u.async=!0;u.src=n;typeof i=="function"&&(u[o]=u[e]=function(){s||u[f]&&u[f]!=="loaded"&&u[f]!=="complete"||(s=!0,typeof i=="function"&&i(u),u[o]=u[e]=null,r&&u.parentNode.removeChild(u))});ut.appendChild(u)}function it(n){var i=t.createElement("link");i.type="text/css";i.rel="stylesheet";i.href=n;ft.appendChild(i)}function ct(){var n=i.StackExchange,t="options",r="user";return n&&n[t]&&n[t][r]&&n[t][r].accountId}function lt(n){var t,i;return n=ot(e.hash?e.hash.substr(1):"",n||{}),t=n.ac||n.accountId||ct(),t&&(n.ac=t),n.tags||(i=nt(),i.length>0&&(n.tags=i.join(";"))),n}function at(n,t,i,r){var c=h(n);if(c===null)return function(){};var e=null,f=null,l=u(),a=function a(){d(c)?(s(e),r(!1,u()-l)):f=o(a,t)};return f=o(a,t),i!==undefined&&(e=o(function(){s(f);r(!0,u()-l)},i)),function(){s(f);s(e)}}function vt(){var r=e.hash.indexOf("large=1")!==-1||!y()||h("#careersadsdoublehigh"),u=r?1:2,f=a(["hireme"],v),n=[u+"="+f],i=a(["careers1"],v),t;return i&&n.push("5="+i),t=a(["careers3"],v),t&&n.push("6="+t),n.join("&")}function rt(n,t){var s=b({},f,{zones:f.zones||vt()}),r=lt(s),e,o;n&&(r.azt=1);t&&(r.lw=t);typeof i.innerWidth=="number"&&(r.bw=i.innerWidth);w&&(r.ver=w);e=["zones","ip","ac","eng","prov","tags","theme","at","remote","seed","lw","azt","sysadmin","bw","nocpm","jobview","cpview","ver"];o=p+"?"+st(r,e);l=u();tt(o)}function yt(n){function h(){f.forEach(it);e.forEach(function(n){return pt(n,t[n],s,o)});typeof i.clc_after_load=="function"&&i.clc_after_load()}var t=n.cr,r=n.h,f=n.st,e=Object.keys(t),o=l?u()-l:0,s="//"+r+"/ct";h()}function pt(n,t,i,u){var s=t.cl,c=t.cn,e=t.an,l=t.utm,o=(s||[]).join(" "),f=h("#"+n);f&&(o&&(f.className+=" "+o),f.innerHTML=c.replace("&pt=0","&pt="+(u||0)),f.onmousedown=function(n){for(var t=n.target,u,o,s;t.tagName!=="A"&&t!==f;)t=t.parentNode;t!==f&&(u=[],e&&u.push("an="+e),o=[].filter.call(t.attributes,function(n){return/^data-/.test(n.name)}),o.length>0&&o.forEach(function(n){var t=n.name.replace(/^data-/,"");u.push(r(t)+"="+r(n.value))}),u.push("utm="+r(et+l)),s="",u.length>0&&(s="?"+u.join("&")),t.href=i+s)})}function wt(n){var i=t.createElement("a");return i.href=n,i.host}function bt(){var i,n;y()?(n=at(c,20,i,rt),o(function(){var r=h(c),i;d(r)||(r.parentNode.removeChild(r),typeof n=="function"&&n(),i=t.createElement("img"),i.src="//"+wt(p)+"/to.gif",i.style.display="none",t.body.appendChild(i))},2e3)):rt()}var p=n.u,f=n.o,w=n.c,y;f=f||{};var b=Object.assign||function(n){for(var i,r,t=1;t<arguments.length;t++){i=arguments[t];for(r in i)Object.prototype.hasOwnProperty.call(i,r)&&(n[r]=i[r])}return n},i=window,e=i.location,r=i.encodeURIComponent,k=i.decodeURIComponent,t=i.document,ut=t.body,ft=t.getElementsByTagName("head")[0],o=i.setTimeout,s=i.clearTimeout,et="&utm_source="+e.hostname+"&utm_medium=ad&utm_campaign=",c="#sidebar [id^=adzerk].everyonelovesstackoverflow",l=0,u=function(){return(new Date).getTime()},ot=function(n,t){return n.split(/\&/g).reduce(function(n,t){var i=t.split("=");return n[k(i[0])]=k(i[1]),n},t||{})},st=function(n,t){return Object.keys(n).filter(function(n){return t.indexOf(n)!==-1}).map(function(t){return r(t)+"="+r(n[t])}).join("&")},d=function(n){return n.innerHTML.replace(/\s+$/g,"")},g=t.querySelectorAll.bind(t),h=t.querySelector.bind(t),ht=t.getElementById.bind(t),a=function(n,t){return n.filter(t)[0]},nt=function(){return[].map.call(g(".post-taglist .post-tag"),function(n){return n.textContent})},v=function(n){return!!ht(n)};y=function(){return g(c).length>0};i.clc=b(window.clc||{},{init:yt,load:bt,ls:tt,as:it,tags:nt})}).call(null, {"c":"a4cb9dc","u":"//clc.stackoverflow.com/p.js"});"use strict";var allowedHosts=["stackoverflow.com","serverfault.com"];(allowedHosts[0]==="*"||allowedHosts.indexOf(location.hostname)!==-1)&&window.clc.load();            </script>
+        </div>
+			  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="/q/15238029" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="/questions/15238029/how-do-i-vertically-align-text-in-a-colorbox" class="question-hyperlink">How do I vertically align text in a colorbox?</a>
+</div><div class="spacer">
+	<a href="/q/18318504" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="/questions/18318504/how-can-place-an-element-at-the-bottom-of-another-element-using-css" class="question-hyperlink">How can place an element at the bottom of another element using CSS?</a>
+</div><div class="spacer">
+	<a href="/q/30888959" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="/questions/30888959/align-a-div-at-the-bottom" class="question-hyperlink">align a div at the bottom</a>
+</div><div class="spacer">
+	<a href="/q/23968771" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="/questions/23968771/css-how-to-make-this-div-at-the-bottom-of-another-div" class="question-hyperlink">css how to make this div at the bottom of another div</a>
+</div><div class="spacer">
+	<a href="/q/24857732" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/24857732/html-page-align-bottom" class="question-hyperlink">Html Page Align Bottom</a>
+</div><div class="spacer">
+	<a href="/q/522928" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">84</div>
+	</a>
+	<a href="/questions/522928/can-you-do-this-html-layout-without-using-tables" class="question-hyperlink">Can you do this HTML layout without using tables?</a>
+</div><div class="spacer">
+	<a href="/q/17123327" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">19</div>
+	</a>
+	<a href="/questions/17123327/align-text-to-the-bottom-of-a-div" class="question-hyperlink">Align text to the bottom of a div</a>
+</div><div class="spacer">
+	<a href="/q/1118513" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">5</div>
+	</a>
+	<a href="/questions/1118513/how-do-i-align-a-div-at-the-bottom-right-corner-of-a-web-page-even-if-the-conten" class="question-hyperlink">How do I align a div at the bottom right corner of a web page even if the content is less?</a>
+</div><div class="spacer">
+	<a href="/q/10433854" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">4</div>
+	</a>
+	<a href="/questions/10433854/position-a-block-element-in-the-bottom-right-of-a-fieldset" class="question-hyperlink">Position a block element in the bottom-right of a fieldset</a>
+</div><div class="spacer">
+	<a href="/q/19057725" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">3</div>
+	</a>
+	<a href="/questions/19057725/bootstrap-3-how-to-use-different-font-sizes-in-the-same-row-while-aligning-a" class="question-hyperlink">Bootstrap 3 &mdash; how to use different font sizes in the same row, while aligning all the text at the bottom</a>
+</div>					<div class="spacer more">
+				<a href="/questions/linked/585945">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer">
+<a href="/q/114543" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted extra-large">2240
+    </div>
+</a><a href="/questions/114543/horizontally-center-a-div-in-a-div" class="question-hyperlink">Horizontally center a div in a div</a>
+</div>
+<div class="spacer">
+<a href="/q/339923" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted extra-large">2091
+    </div>
+</a><a href="/questions/339923/set-cellpadding-and-cellspacing-in-css" class="question-hyperlink">Set cellpadding and cellspacing in CSS?</a>
+</div>
+<div class="spacer">
+<a href="/q/489340" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted extra-large">1195
+    </div>
+</a><a href="/questions/489340/vertically-align-text-next-to-an-image" class="question-hyperlink">Vertically align text next to an image?</a>
+</div>
+<div class="spacer">
+<a href="/q/5011059" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">16
+    </div>
+</a><a href="/questions/5011059/left-center-and-right-align-divs-on-bottom-of-same-line" class="question-hyperlink">Left, center, and right align divs on bottom of same line</a>
+</div>
+<div class="spacer">
+<a href="/q/6401869" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">69
+    </div>
+</a><a href="/questions/6401869/stacking-divs-from-bottom-to-top" class="question-hyperlink">Stacking Divs from Bottom to Top</a>
+</div>
+<div class="spacer">
+<a href="/q/7273338" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">601
+    </div>
+</a><a href="/questions/7273338/how-to-vertically-align-an-image-inside-div" class="question-hyperlink">How to vertically align an image inside div</a>
+</div>
+<div class="spacer">
+<a href="/q/8865458" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">723
+    </div>
+</a><a href="/questions/8865458/how-to-align-text-vertically-center-in-div-with-css" class="question-hyperlink">How to align text vertically center in div with CSS?</a>
+</div>
+<div class="spacer">
+<a href="/q/9974137" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/9974137/how-to-vertically-align-div-containers-with-css" class="question-hyperlink">How to vertically align div containers with CSS?</a>
+</div>
+<div class="spacer">
+<a href="/q/17652654" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="/questions/17652654/how-to-align-divs-right-and-left-while-using-the-css-ghost-element-technique-for" class="question-hyperlink">How to align divs right and left while using the CSS ghost element technique for vertical centering?</a>
+</div>
+<div class="spacer">
+<a href="/q/26250532" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">2
+    </div>
+</a><a href="/questions/26250532/twitter-bootstrap-align-element-to-bottom" class="question-hyperlink">twitter bootstrap: align element to bottom</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="//stackexchange.com/questions?tab=hot" 
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-dba" title="Database Administrators Stack Exchange"></div><a href="http://dba.stackexchange.com/questions/133393/postgresql-is-there-a-way-to-select-n-on-like-distinct-on-but-more-than-one-o" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:182 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    PostgreSQL: Is there a way to SELECT n ON (like DISTINCT ON, but more than one of each)
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1712933/why-does-changing-variables-work" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    why does changing variables work?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-askubuntu" title="Ask Ubuntu"></div><a href="http://askubuntu.com/questions/750162/install-ubuntu-on-usb-flash-drive" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:89 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Install Ubuntu on USB Flash Drive
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/272173/what-is-the-number-at-the-top-for-the-results-for-ls-l" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the number at the top for the results for ls -l?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/224421/is-there-any-downside-to-using-a-larger-than-needed-smoothing-capacitor" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there any downside to using a larger than needed smoothing capacitor?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-apple" title="Ask Different"></div><a href="http://apple.stackexchange.com/questions/232452/how-to-skip-ios-9-3-update" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:118 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to skip iOS 9.3 update?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/65714/if-a-phd-student-is-bad-in-interpersonal-communications-would-he-find-trouble-d" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    If a PhD student is bad in interpersonal communications, would he find trouble doing his PhD?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-history" title="History Stack Exchange"></div><a href="http://history.stackexchange.com/questions/28050/which-year-in-history-had-the-highest-ratio-of-non-natural-deaths" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:324 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Which year in history had the highest ratio of non-natural deaths?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/315124/seeking-generic-word-place-where-opponents-fight" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Seeking Generic Word: Place where opponents fight
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-wordpress" title="WordPress Development Stack Exchange"></div><a href="http://wordpress.stackexchange.com/questions/221727/how-to-add-headers-to-outgoing-email" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:110 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to add headers to outgoing email?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-gis" title="Geographic Information Systems Stack Exchange"></div><a href="http://gis.stackexchange.com/questions/186637/csv-points-not-showing-up-when-importing-them-in-qgis" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:79 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    CSV points not showing up when importing them in QGIS
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-gardening" title="Gardening &amp; Landscaping Stack Exchange"></div><a href="http://gardening.stackexchange.com/questions/23703/do-perennials-need-to-be-split" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:269 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do perennials need to be split?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/118445/can-the-ransomware-encryption-key-be-derived-from-comparing-encrypted-and-unencr" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can the ransomware encryption key be derived from comparing encrypted and unencrypted files?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/38896/how-could-a-book-be-constructed-to-last-forever" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How could a book be constructed to last forever?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/38590/humans-can-now-run-40-mph-how-do-i-keep-the-stupid-people-alive" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Humans can now run 40 mph. How do I keep the stupid people alive?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-programmers" title="Programmers Stack Exchange"></div><a href="http://programmers.stackexchange.com/questions/313617/team-constantly-fails-to-meet-sprint-goals" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:131 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Team constantly fails to meet sprint goals
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-cs" title="Computer Science Stack Exchange"></div><a href="http://cs.stackexchange.com/questions/54933/how-do-computers-keep-track-of-time" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:419 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How do computers keep track of time?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-ux" title="User Experience Stack Exchange"></div><a href="http://ux.stackexchange.com/questions/91775/a-ui-ux-developer-with-color-blindness-good-or-bad-idea-or-maybe-a-challenge" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:102 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A UI/UX developer with color-blindness. Good or Bad idea or maybe a challenge?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-portuguese" title="Portuguese Language Stack Exchange"></div><a href="http://portuguese.stackexchange.com/questions/3030/outra-palavra-para-nomear-sem-aprova%c3%a7%c3%a3o" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:625 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Outra palavra para nomear sem aprova&#231;&#227;o
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="http://physics.stackexchange.com/questions/245214/what-are-gravitational-waves-made-of" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What are gravitational waves made of?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/315740/gods-own-country" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    &quot;God&#39;s own country&quot;
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/64136/my-boss-blames-the-company-going-under-on-me" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    My boss blames the company going under on me
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-mechanics" title="Motor Vehicle Maintenance &amp; Repair Stack Exchange"></div><a href="http://mechanics.stackexchange.com/questions/27555/removing-spindle-cap" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:224 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    removing spindle cap
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/29573/i-am-both-lock-and-key-who-am-i" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    I am both lock and key - who am I?
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="/feeds/question/585945" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/585945/ivc/885b');});
+</script>
+<noscript>
+    <div><img src="/posts/585945/ivc/885b" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang">default</div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="/tour">tour</a>
+                    <a href="/help">help</a>
+                    <a href="http://blog.stackoverflow.com?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com">chat</a>
+                    <a href="http://data.stackexchange.com">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="//stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="//serverfault.com" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="//superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="//webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="//askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="//webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="//gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="//tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//programmers.stackexchange.com" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="//unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="//apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="//wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="//gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="//electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="//android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="//security.stackexchange.com" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="//dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="//drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="//sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="//ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="//mathematica.stackexchange.com" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="//salesforce.stackexchange.com" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="//expressionengine.stackexchange.com" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="//scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="//graphicdesign.stackexchange.com" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="//movies.stackexchange.com" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="//cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="//diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="//money.stackexchange.com" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="//academia.stackexchange.com" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (9)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="//skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="//judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="//travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="//christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="//gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="//bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="//rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="//stats.stackexchange.com" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="//cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="//physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="//mathoverflow.net" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="//chemistry.stackexchange.com" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="//biology.stackexchange.com" title="biology researchers, academics, and students">Biology</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (5)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="//stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="//meta.stackexchange.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="//area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="//careers.stackoverflow.com">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo &#169; 2016 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2016.3.25.3380
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () {
+            setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+        ados_setKeywords('css,alignment,vertical-alignment');; ados_load();
+    });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-1');
+                        ga('set', 'dimension2', '|css|alignment|vertical-alignment|');         ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>
+            
+    </body>
+</html>

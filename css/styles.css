@@ -1,5 +1,19 @@
-h2 {
-  text-align: center;
+/*index.html css*/
+body {
+  padding-top: 60px;
+}
+
+
+#mainbody {
+  min-height: 800px;
+}
+
+#sidebarhead {
+  margin-top: 60px;
+}
+
+#sidebarhead>h3 {
+padding-bottom: 5px;
 }
 
 .results {
@@ -7,6 +21,19 @@ h2 {
   margin-top: 50px;
 }
 
+
 #recomendation {
 color: red;
+}
+
+.image {
+   position: relative;
+   width: 100%; 
+}
+
+h2 {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
 }
