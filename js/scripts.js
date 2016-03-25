@@ -5,9 +5,10 @@ $(document).ready(function() {
    var region =$('#region').val();
    var budget =$('#budget').val();
    var grid =$('#grid').val();
+   var kids =$('#kids').val();
 
    if (season === "spring" && region === "North America" && budget === "expensive"
-&& grid === "offgrid") {
+&& grid === "offgrid" && kids === "no") {
      var result = "rock"
     $("#recomendation").empty().text(result);
     $(".results").show();
